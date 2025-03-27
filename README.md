@@ -1,2 +1,23 @@
-# ISEAR-Back-Translation-
-This repository provides data back translation code from the paper "Enhancing Emotion Classification on the ISEAR Dataset Using Fine-Tuning with Hybrid Transformer Models." Techniques here are optimized for Electra Base, XLNet Base, RoBERTa Base, T5 Base, DeBERTa V3 Large, and CNN-enhanced variants of these models.
+Back-Translation for Data Augmentation
+This project performs back-translation using the Helsinki-NLP MarianMT model to enhance text datasets. It translates English text to French and back to English for augmentation.
+
+Features
+✅ GPU-accelerated translation using MarianMT
+✅ Batch processing for efficiency
+✅ Supports ISEAR dataset (Emotion Classification)
+
+Usage
+Upload the ISEAR dataset (ISEAR.xlsx) to Kaggle.
+
+Run the script to generate back-translated text.
+
+The output CSV (ISEAR_back_translated.csv) is saved in /kaggle/working/.
+
+Requirements
+torch
+transformers
+pandas
+tqdm
+
+Acknowledgment
+Built using Helsinki-NLP MarianMT for translation. 🚀
